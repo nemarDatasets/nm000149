@@ -1,0 +1,49 @@
+{
+	"Name": "BNCI 2019-001 Motor Imagery dataset for Spinal Cord Injury patients",
+	"BIDSVersion": "1.9.0",
+	"HEDVersion": "8.4.0",
+	"DatasetType": "derivative",
+	"License": "CC-BY-4.0",
+	"Authors": [
+		"Patrick Ofner",
+		"Andreas Schwarz",
+		"Joana Pereira",
+		"Daniela Wyss",
+		"Renate Wildburger",
+		"Gernot R. M\u00fcller-Putz"
+	],
+	"Acknowledgements": "This work is supported by the European ICT Programme Project H2020-643955 'MoreGrasp'.",
+	"Funding": [
+		"European ICT Programme Project H2020-643955 'MoreGrasp'"
+	],
+	"EthicsApprovals": [
+		"Ethics committee for the hospitals of the Austrian general accident insurance institution AUVA (approval number 3/2017)"
+	],
+	"ReferencesAndLinks": [
+		"https://doi.org/10.5281/zenodo.2222268",
+		"10.1038/s41598-019-43594-9"
+	],
+	"GeneratedBy": [
+		{
+			"CodeURL": "https://github.com/NeuroTechX/moabb",
+			"Name": "moabb",
+			"Description": "Mother of All BCI Benchmarks",
+			"Version": "1.5.0"
+		}
+	],
+	"SourceDatasets": [
+		{
+			"DOI": "10.1038/s41598-019-43594-9",
+			"URL": "https://doi.org/10.5281/zenodo.2222268"
+		}
+	],
+	"Keywords": [
+		"Spinal Cord Injury",
+		"Motor",
+		"imagery",
+		"neuroprosthetic",
+		"upper_limb_control",
+		"hand_grasp_control"
+	],
+	"PublicationYear": 2019
+}

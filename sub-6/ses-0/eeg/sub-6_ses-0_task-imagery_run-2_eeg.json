@@ -1,0 +1,48 @@
+{
+	"TaskName": "imagery",
+	"Manufacturer": "g.tec",
+	"PowerLineFrequency": 50.0,
+	"SamplingFrequency": 256.0,
+	"SoftwareFilters": {
+		"preprocessing_steps": {
+			"Description": "bandpass filter, notch filter, ICA, artifact rejection"
+		}
+	},
+	"RecordingDuration": 297.99609375,
+	"RecordingType": "continuous",
+	"EEGReference": "left earlobe",
+	"EEGGround": "AFF2h",
+	"EEGPlacementScheme": "10-5",
+	"EEGChannelCount": 61,
+	"EOGChannelCount": 0,
+	"ECGChannelCount": 0,
+	"EMGChannelCount": 0,
+	"TriggerChannelCount": 0,
+	"ManufacturersModelName": "g.tec",
+	"SoftwareVersions": "EEGlab 14.1.1b",
+	"CapManufacturer": "g.tec medical engineering GmbH",
+	"CapManufacturersModelName": "g.GAMMAsys/g.LADYbird",
+	"HardwareFilters": {
+		"Bandpass": {
+			"low_cutoff_hz": 0.01,
+			"high_cutoff_hz": 100.0,
+			"Type": "Chebyshev",
+			"Order": 8
+		},
+		"Notch": {
+			"CutoffFrequency": [
+				50
+			]
+		}
+	},
+	"TaskDescription": "[attempted movement] motor imagery and attempted movements Trial duration: 5.0s, cue: 3.0s, imagery: 3.0s.",
+	"Instructions": "Participants were instructed to attempt or execute movements based on class cue displayed on screen. They were asked to focus gaze on fixation cross, avoid eye movements, swallowing, and blinking during trial period.",
+	"CogAtlasID": "https://www.cognitiveatlas.org/task/id/trm_4c8a834779883/",
+	"InstitutionName": "Graz University of Technology",
+	"InstitutionAddress": "Graz, Austria",
+	"InstitutionalDepartmentName": "Institute of Neural Engineering, BCI-Lab",
+	"SubjectArtefactDescription": "n/a",
+	"DeviceSerialNumber": "n/a",
+	"Description": "This dataset investigates whether attempted arm and hand movements in persons with spinal cord injury can be decoded from low-frequency EEG signals (MRCPs). The study includes offline 5-class classification and online proof-of-concept for self-paced movement detection.",
+	"MISCChannelCount": 0
+}
