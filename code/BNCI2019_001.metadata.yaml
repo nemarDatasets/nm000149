@@ -1,0 +1,304 @@
+_dataset:
+  class: BNCI2019_001
+  code: BNCI2019-001
+  doi: 10.1038/s41598-019-43594-9
+  interval:
+  - 2
+  - 5
+  n_subjects: 10
+  paradigm: imagery
+abstract: We show that persons with spinal cord injury (SCI) retain decodable neural correlates of attempted arm and hand
+  movements. We investigated hand open, palmar grasp, lateral grasp, pronation, and supination in 10 persons with cervical
+  SCI. Discriminative movement information was provided by the time-domain of low-frequency electroencephalography (EEG) signals.
+  Based on these signals, we obtained a maximum average classification accuracy of 45% (chance level was 20%) with respect
+  to the five investigated classes. Pattern analysis indicates central motor areas as the origin of the discriminative signals.
+  Furthermore, we introduce a proof-of-concept to classify movement attempts online in a closed loop, and tested it on a person
+  with cervical SCI. We achieved here a modest classification performance of 68.4% with respect to palmar grasp vs hand open
+  (chance level 50%).
+acquisition:
+  auxiliary_channels:
+    eog_channels: 3
+    eog_type:
+    - above nasion
+    - below outer canthi left
+    - below outer canthi right
+    has_eog: true
+  cap_manufacturer: g.tec medical engineering GmbH
+  cap_model: g.GAMMAsys/g.LADYbird
+  channel_types:
+    eeg: 61
+    eog: 3
+  electrode_type: active electrode
+  filters: 50 Hz notch, 0.01-100 Hz bandpass
+  ground: AFF2h
+  hardware: g.tec
+  line_freq: 50.0
+  montage: 10-5
+  n_channels: 61
+  reference: left earlobe
+  sampling_rate: 256.0
+  sensor_type: active electrode
+  sensors:
+  - AFz
+  - C1
+  - C2
+  - C3
+  - C4
+  - C5
+  - C6
+  - CCP1h
+  - CCP2h
+  - CCP3h
+  - CCP4h
+  - CCP5h
+  - CCP6h
+  - CP1
+  - CP2
+  - CP3
+  - CP4
+  - CP5
+  - CP6
+  - CPP1h
+  - CPP2h
+  - CPP3h
+  - CPP4h
+  - CPP5h
+  - CPP6h
+  - CPz
+  - Cz
+  - F1
+  - F2
+  - F3
+  - F4
+  - FC1
+  - FC2
+  - FC3
+  - FC4
+  - FC5
+  - FC6
+  - FCC1h
+  - FCC2h
+  - FCC3h
+  - FCC4h
+  - FCC5h
+  - FCC6h
+  - FCz
+  - FFC1h
+  - FFC2h
+  - FFC3h
+  - FFC4h
+  - FFC5h
+  - FFC6h
+  - Fz
+  - P1
+  - P2
+  - P3
+  - P4
+  - P5
+  - P6
+  - POz
+  - PPO1h
+  - PPO2h
+  - Pz
+  - eog-l
+  - eog-m
+  - eog-r
+  software: EEGlab 14.1.1b
+bci_application:
+  applications:
+  - neuroprosthetic
+  - upper_limb_control
+  - hand_grasp_control
+  environment: indoor
+  online_feedback: true
+contributing_labs:
+- Graz University of Technology Institute of Neural Engineering BCI-Lab
+- AUVA rehabilitation clinic Tobelbad
+cross_validation:
+  cv_folds: 10
+  cv_method: 10x10-fold
+  evaluation_type:
+  - within_subject
+  - cross_validation
+data_structure:
+  n_blocks: 9
+  n_trials: 360
+  n_trials_per_class:
+    hand_open: 72
+    lateral_grasp: 72
+    palmar_grasp: 72
+    pronation: 72
+    supination: 72
+  trials_context: total per subject (72 trials per class)
+documentation:
+  acknowledgements: This work is supported by the European ICT Programme Project H2020-643955 'MoreGrasp'.
+  associated_paper_doi: 10.1038/s41598-019-43594-9
+  contact_info:
+  - gernot.mueller@tugraz.at
+  country: Austria
+  data_url: https://doi.org/10.5281/zenodo.2222268
+  description: This dataset investigates whether attempted arm and hand movements in persons with spinal cord injury can be
+    decoded from low-frequency EEG signals (MRCPs). The study includes offline 5-class classification and online proof-of-concept
+    for self-paced movement detection.
+  doi: 10.1038/s41598-019-43594-9
+  ethics_approval:
+  - Ethics committee for the hospitals of the Austrian general accident insurance institution AUVA (approval number 3/2017)
+  funding:
+  - European ICT Programme Project H2020-643955 'MoreGrasp'
+  institution: Graz University of Technology
+  institution_address: Graz, Austria
+  institution_department: Institute of Neural Engineering, BCI-Lab
+  investigators:
+  - Patrick Ofner
+  - Andreas Schwarz
+  - Joana Pereira
+  - Daniela Wyss
+  - Renate Wildburger
+  - Gernot R. Müller-Putz
+  license: CC-BY-4.0
+  publication_year: 2019
+  repository: Zenodo
+  senior_author: Gernot R. Müller-Putz
+experiment:
+  class_labels:
+  - supination
+  - pronation
+  - hand_open
+  - palmar_grasp
+  - lateral_grasp
+  events:
+    hand_open: 1
+    lateral_grasp: 3
+    palmar_grasp: 2
+    pronation: 4
+    supination: 5
+  feedback_type: visual feedback (online paradigm only - movement icon displayed when movement detected)
+  has_training_test_split: true
+  instructions: Participants were instructed to attempt or execute movements based on class cue displayed on screen. They
+    were asked to focus gaze on fixation cross, avoid eye movements, swallowing, and blinking during trial period.
+  mode: both
+  n_classes: 5
+  paradigm: imagery
+  primary_modality: visual
+  stimulus_modalities:
+  - visual
+  - auditory
+  stimulus_type: visual cue
+  study_design: motor imagery and attempted movements
+  synchronicity: synchronous
+  task_type: attempted movement
+  tasks:
+  - hand_open
+  - palmar_grasp
+  - lateral_grasp
+  - pronation
+  - supination
+  trial_duration: 5.0
+file_format: GDF
+methodology: 10 participants with cervical SCI were recruited from a rehabilitation center (AUVA rehabilitation clinic, Tobelbad,
+  Austria). Participants were aged 20-78 years with neurological level of injury C1-C7 and AIS scores A-D. They sat in wheelchairs
+  and attempted/executed movements based on visual cues shown on screen. Each trial lasted 5 seconds with a fixation cross
+  and beep at start, class cue displayed at 2 seconds. 9 runs with 40 trials per run were recorded (360 trials total, 72 per
+  class). EEG was recorded from 61 electrodes using g.tec g.USBamps and g.GAMMAsys/g.LADYbird active electrode system at 256
+  Hz with 0.01-100 Hz bandpass and 50 Hz notch filter. Preprocessing included visual inspection, ICA artifact removal, trial
+  rejection, and 0.3-3 Hz bandpass filtering. Classification used shrinkage LDA with 10x10 cross-validation. Online proof-of-concept
+  used modified training paradigm with ready/go cues and 3-class classifier (hand open, palmar grasp, rest) with pre/post
+  class detection logic.
+n_contributing_labs: 2
+paradigm_specific:
+  cue_duration_s: 3.0
+  detected_paradigm: motor_imagery
+  imagery_duration_s: 3.0
+  imagery_tasks:
+  - hand_open
+  - palmar_grasp
+  - lateral_grasp
+  - pronation
+  - supination
+participants:
+  age_max: 78
+  age_mean: 49.8
+  age_min: 20
+  ages:
+  - 35
+  - 42
+  - 62
+  - 20
+  - 57
+  - 78
+  - 27
+  - 69
+  - 53
+  - 55
+  clinical_population: spinal cord injury
+  gender:
+    female: 1
+    male: 9
+  handedness: right-handed (all participants originally)
+  health_status: patients
+  n_subjects: 10
+  species: human
+performance:
+  accuracy_percent: 45.3
+  chance_level_5class: 20.0
+  confidence_interval_lower: 40.3
+  confidence_interval_upper: 50.3
+  online_FP_per_min: 3.4
+  online_TPR_percent: 31.75
+  online_accuracy_2class: 68.4
+  peak_accuracy_3class_subset: 53.0
+  peak_accuracy_5class: 45.3
+  peak_latency_3class_subset_s: 1.0
+  peak_latency_5class_s: 1.1
+  significance_level_5class: 22.3
+preprocessing:
+  artifact_methods:
+  - ICA
+  - visual inspection
+  - abnormal joint probability
+  - abnormal kurtosis
+  bandpass:
+    high_cutoff_hz: 100.0
+    low_cutoff_hz: 0.01
+  data_state: raw (GDF format)
+  filter_order: 8
+  filter_type: Chebyshev
+  highpass_hz: 0.01
+  lowpass_hz: 100
+  notch_hz:
+  - 50
+  notes: Noisy channels were visually inspected and removed. AFz was removed by default as it is sensitive to eye blinks and
+    eye movements. ICA was performed on 0.3-70 Hz filtered signals using extended infomax. PCA dimensionality reduction retained
+    99% variance. Artifact-contaminated ICs (muscle and eye-related) were removed. Trials with values above/below ±100 μV,
+    abnormal joint probabilities, or abnormal kurtosis (5x SD threshold) were rejected. Final analysis used 0.3-3 Hz bandpass
+    filter.
+  preprocessing_applied: true
+  preprocessing_steps:
+  - bandpass filter
+  - notch filter
+  - ICA
+  - artifact rejection
+  re_reference: CAR
+runs_per_session: 9
+sessions_per_subject: 1
+signal_processing:
+  classifiers:
+  - Shrinkage LDA
+  - sLDA
+  feature_extraction:
+  - time-domain low-frequency signals
+  - MRCPs
+  - ICA
+  frequency_bands:
+    analyzed_range:
+    - 0.3
+    - 3.0
+  spatial_filters:
+  - CAR
+tags:
+  modality:
+  - Motor
+  pathology:
+  - Spinal Cord Injury
+  type:
+  - Motor
