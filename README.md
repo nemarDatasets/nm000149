@@ -1,3 +1,5 @@
+[![DOI](https://img.shields.io/badge/DOI-10.82901%2Fnemar.nm000149-blue)](https://doi.org/10.82901/nemar.nm000149)
+
 # BNCI 2019-001 Motor Imagery dataset for Spinal Cord Injury patients
 
 BNCI 2019-001 Motor Imagery dataset for Spinal Cord Injury patients.
