@@ -40,6 +40,7 @@ jobs:
         if: steps.check_tag.outputs.exists == 'false'
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PR_NUMBER: ${{ github.event.pull_request.number }}
         run: |
           git config user.name "GitHub Actions"
           git config user.email "actions@github.com"
@@ -47,7 +48,7 @@ jobs:
           git tag -a "v$VERSION" -m "Release v$VERSION"
           git push origin "v$VERSION"
           gh release create "v$VERSION" --title "v$VERSION" \
-            --notes "Release v$VERSION from PR #${{ github.event.pull_request.number }}"
+            --notes "Release v$VERSION from PR #${PR_NUMBER}"
           echo "created=true" >> $GITHUB_OUTPUT
 
   cleanup-staging:
