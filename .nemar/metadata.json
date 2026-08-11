@@ -1,0 +1,96 @@
+{
+  "version": "2.0",
+  "pipeline_stage": "validated",
+  "authors": {
+    "Patrick Ofner": {
+      "orcid": "0000-0001-7169-4300"
+    },
+    "Andreas Schwarz": {
+      "orcid": "0000-0002-3883-4989"
+    },
+    "Joana Pereira": {
+      "orcid": "0000-0002-2032-8981"
+    },
+    "Daniela Wyss": {},
+    "Renate Wildburger": {},
+    "Gernot R. Müller-Putz": {
+      "orcid": "0000-0002-0087-3720"
+    }
+  },
+  "related_identifiers": [
+    {
+      "identifier": "10.1038/s41598-019-43594-9",
+      "identifier_type": "DOI",
+      "relation_type": "IsDerivedFrom"
+    },
+    {
+      "identifier": "10.5281/zenodo.2222268",
+      "identifier_type": "DOI",
+      "relation_type": "References"
+    },
+    {
+      "identifier": "https://github.com/nemarDatasets/nm000149",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "https://nemar.org/dataset/nm000149",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    }
+  ],
+  "funding_references": [
+    {
+      "funder_name": "European Commission",
+      "award_number": "H2020-643955",
+      "award_title": "MoreGrasp"
+    }
+  ],
+  "title": "BNCI 2019-001 Motor Imagery dataset for Spinal Cord Injury patients",
+  "license": "CC-BY-4.0",
+  "dataset_type": "derivative",
+  "resource_type_general": "Dataset",
+  "modalities": [
+    "eeg"
+  ],
+  "resource_type_specific": "EEG Dataset",
+  "sizes": [
+    "4.8 GB (183 files)"
+  ],
+  "formats": [
+    ".bdf",
+    ".gdf",
+    ".html",
+    ".json",
+    ".md",
+    ".tsv",
+    ".yaml",
+    ".yml"
+  ],
+  "description": "This dataset comprises EEG recordings from 10 patients with spinal cord injury performing five distinct hand and arm motor imagery tasks: hand open, palmar grasp, lateral grasp, pronation, and supination. The study investigates the decoding of attempted movements from low-frequency EEG signals (movement-related cortical potentials) to support neuroprosthetic applications for upper limb control. The dataset includes 360 trials (72 per class) acquired at 256 Hz with 61 EEG channels and 3 EOG channels, along with preprocessing details and classification performance metrics.",
+  "methods_description": "EEG data were acquired at 256 Hz using 61 active electrodes in a 10-5 montage (g.tec g.GAMMAsys/g.LADYbird cap) with reference at left earlobe and ground at AFF2h. Participants performed five motor imagery tasks cued visually for 3 seconds followed by 3 seconds of imagery execution. Online filters included 50 Hz notch and 0.01-100 Hz bandpass. Preprocessing involved bandpass filtering (0.01-100 Hz, Chebyshev order 8), ICA-based artifact removal, trial rejection based on amplitude (±100 μV) and statistical criteria, and common average re-referencing. Final analysis used 0.3-3 Hz bandpass filtering with shrinkage LDA classification.",
+  "keywords": [
+    {
+      "term": "EEG"
+    },
+    {
+      "term": "motor imagery"
+    },
+    {
+      "term": "spinal cord injury"
+    },
+    {
+      "term": "brain-computer interfaces"
+    },
+    {
+      "term": "movement-related cortical potentials"
+    },
+    {
+      "term": "neuroprosthetics"
+    },
+    {
+      "term": "hand grasp control"
+    }
+  ],
+  "source_hash": "dac15c6abd94fd703696d3b3aadd02776de6db94de82d9b478762204dafa6d23"
+}
