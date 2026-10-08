@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "BNCI 2019-001 Motor Imagery dataset for Spinal Cord Injury patients",
-  "description": "EEG recordings from 10 persons with cervical spinal cord injury performing attempted arm and hand movements: hand open, palmar grasp, lateral grasp, pronation and supination. Sixty-one EEG channels and 3 EOG channels were recorded at 256 Hz across 9 runs, giving 360 trials per participant. The data show that movement-related cortical potentials in low-frequency EEG can be decoded offline in five classes. They also support an online proof-of-concept for self-paced movement detection, relevant to neuroprosthetic control.",
-  "methods_description": "Participants attempted or executed movements according to visual cues while fixating on a cross. EEG was recorded with g.tec active electrodes (61 channels, 10-5 montage, left earlobe reference) plus 3 EOG channels at 256 Hz, with a 0.01-100 Hz bandpass and a 50 Hz notch filter. Each participant completed 9 runs of 72 trials per class in total. Preprocessing included ICA-based artifact removal, and classification used shrinkage LDA on 0.3-3 Hz low-frequency signals.",
+  "description": "EEG recordings from 10 persons with cervical spinal cord injury performing attempted arm and hand movements: hand open, palmar grasp, lateral grasp, pronation and supination. The data show that low-frequency time-domain EEG (movement-related cortical potentials) carries information that supports offline five-class decoding. An online proof-of-concept for self-paced movement detection is also included. The aim is to support neuroprosthetic control for upper limb and hand grasp restoration.",
+  "methods_description": "61-channel EEG plus 3 EOG channels were recorded at 256 Hz with g.tec active electrodes (10-5 montage, left earlobe reference, AFF2h ground). Participants attempted or executed cued movements over 9 runs, with 72 trials per class (360 trials in total). Preprocessing included bandpass and notch filtering, ICA-based artifact removal, common average referencing and trial rejection. Decoding used shrinkage LDA in 10x10-fold cross-validation.",
   "license": "CC-BY-4.0",
   "dataset_type": "derivative",
   "authors": {
@@ -35,15 +35,12 @@
       "term": "motor imagery"
     },
     {
-      "term": "attempted movement"
-    },
-    {
-      "term": "movement-related cortical potentials"
-    },
-    {
       "term": "Brain-Computer Interfaces",
       "subject_scheme": "MeSH",
       "value_uri": "http://id.nlm.nih.gov/mesh/D062207"
+    },
+    {
+      "term": "movement-related cortical potentials"
     },
     {
       "term": "neuroprosthetics"
@@ -91,10 +88,11 @@
     ".gdf",
     ".html",
     ".json",
+    ".jsonl",
     ".md",
     ".tsv",
     ".yaml",
     ".yml"
   ],
-  "source_hash": "28833d65d996ec42138b4a5b62f2dcbd480982373e635af2f2ec4897f08b1b21"
+  "source_hash": "a02a0882b0ac76c7d14fd0301331774f72bc64b09e42579f342a5a373f0b7ce3"
 }
